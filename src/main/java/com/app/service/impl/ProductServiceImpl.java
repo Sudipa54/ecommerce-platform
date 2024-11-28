@@ -64,7 +64,7 @@ public class ProductServiceImpl implements ProductService {
 			flag = true;
 			
 		}
-		return false;
+		return flag;
 	}
 
 }
