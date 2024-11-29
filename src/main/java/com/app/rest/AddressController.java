@@ -23,6 +23,7 @@ public class AddressController {
 	
 	@Autowired
 	private AddressServiceImpl serviceImpl;
+	
 	@PostMapping("/add")
 	public ResponseEntity<?> createAddress(@RequestBody AddressDto address)
 	{
@@ -30,8 +31,8 @@ public class AddressController {
 		if(add != null)
 			return new ResponseEntity(HttpStatus.OK).ok(add);
 		else
-			return new ResponseEntity(HttpStatus.OK).ok("address inserstion failed");
-			
+			return new ResponseEntity(HttpStatus.OK).ok("Address insertion failed");
+		
 	}
 	
 	// Get all address
@@ -70,10 +71,10 @@ public class AddressController {
 		
 		if(isDeleted)
 		{
-			return "Record deleted Sucessfully";
+			return "Address deleted Sucessfully";
 		}
 		else
-			return "Record not deleted";
+			return "Address not deleted";
 		
 	}
 }

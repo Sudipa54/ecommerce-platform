@@ -1,6 +1,5 @@
 package com.app.dto;
 
-import jakarta.persistence.Column;
 
 public class UserDto {
 

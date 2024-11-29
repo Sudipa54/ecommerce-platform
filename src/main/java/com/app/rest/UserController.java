@@ -32,7 +32,7 @@ public class UserController {
 		if (user != null)
 			return new ResponseEntity(HttpStatus.OK).ok(user); 
 		else
-			return new ResponseEntity(HttpStatus.OK).ok("user insertion failed");
+			return new ResponseEntity(HttpStatus.OK).ok("User insertion failed");
 
 	}
 	
