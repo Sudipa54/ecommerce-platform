@@ -43,7 +43,7 @@ public class ProductController {
 		if(pro != null)
 			return new ResponseEntity(HttpStatus.OK).ok(pro);
 		else
-			return new ResponseEntity(HttpStatus.OK).ok("Product inserstion failed");
+			return new ResponseEntity(HttpStatus.OK).ok("Product insertion failed");
 			
 	}
 	
